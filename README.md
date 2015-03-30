@@ -1,8 +1,7 @@
 # FrontEndCodeEditor
 Fully front end version of the [code editor](https://github.com/PaulFlorea/InBrowserPreviewer).
 
-
-## To Install
+## To Install and Run
 
 Install [Node.js](https://nodejs.org/download/) if you haven't already
 
