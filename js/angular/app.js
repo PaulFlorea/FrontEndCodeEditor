@@ -1,12 +1,10 @@
 app = angular.module('editorApp', []);
-
 app.controller("MainController", ['$scope', '$sce', function($scope, $sce) {
 
 	//Modifiable models
 	$scope.html = '<body>'+
 	'\n\t<h1>Hello World</h1>'+
 	'\n</body>';
-	
 
 	$scope.css = 'h1{'+
 	'\n\tcolor:#007092;'+
