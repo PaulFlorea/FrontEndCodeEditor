@@ -21,7 +21,7 @@ app.controller("MainController", ['$scope', '$sce', function($scope, $sce) {
 
 	$scope.head_e = '\n</style>'+
 	'\n\t</head>';
-	
+
 
 	//Resultant model
 	$scope.myHTML = $scope.head_s +  $scope.css + $scope.head_e + $scope.html + '\n</html>';
