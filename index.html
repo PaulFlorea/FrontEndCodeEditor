@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>In Browser Editor</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+  
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+    <!-- Angularjs -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+
+    <script type="text/javascript" src="js/angular/app.js"></script>
+
+        <!-- Boostrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <!-- highlight.js -->
+<!--     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>  
+    <script>hljs.initHighlightingOnLoad();</script>
+ -->
+    <!-- Some extra CSS; mainly for editors and headers -->
+    <link rel="stylesheet" href="css/custom.css">
+  </head>
+  <body ng-app='myApp' ng-controller="MainController">
+    <!-- Here be headers -->
+    <ul class="header">
+      <li class="html">HTML</li>
+      <li class="css">CSS</li>
+    </ul>
+
+    <textarea id="html" ng-model="html" ng-change="update()"></textarea>
+    <textarea id="css" ng-model="css" ng-change="update()"></textarea>
+
+    <div id="result" ng-bind-html="myHTMLSafe"></div>
+  </body>
+</html>
